@@ -1,4 +1,6 @@
-import 'package:ces_show_/menu.dart';
+import 'package:ces_show_/views/concierto/concierto.dart';
+import 'package:ces_show_/views/inicio/menu.dart';
+import 'package:ces_show_/views/teatro/teatro.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +15,9 @@ class MyApp extends StatelessWidget {
       initialRoute:'/menu', //la ruta con la que inicia
       routes: {  //rutas
         '/menu': (context) =>Menu(),
+        '/teatro':(context) =>Teatro(),
+        '/concierto':(context) =>Concierto(),
+
       },
     );
   }

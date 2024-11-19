@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Menu extends StatelessWidget { //crear la clase login
+class Concierto extends StatelessWidget { //crear la clase login
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -22,22 +22,19 @@ class Menu extends StatelessWidget { //crear la clase login
         backgroundColor: Color.fromARGB(255, 105, 31, 145)
       ),
       body: Center(
-        child: Text('Bienvenido',
+        child: Text('CONCIERTO',
           style: TextStyle(
             fontSize: 25
           ),
         ),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color.fromARGB(255, 105, 31, 145),
         selectedItemColor: Colors.white,
-        
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'MENU',
-            
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.event),
@@ -48,18 +45,17 @@ class Menu extends StatelessWidget { //crear la clase login
             label: 'CONCIERTO',
           ),
         ],
+        currentIndex: 2,
         onTap: (index) {
           if (index == 0) {
-            Navigator.pushNamed(context,'/menu'); 
+            Navigator.popUntil(context, ModalRoute.withName('/menu')); 
           } else if (index == 1) {
             Navigator.pushNamed(context, '/teatro'); 
           } else if (index == 2) {
             Navigator.pushNamed(context, '/concierto'); 
           }
         },
-      ),
-           
+      ),     
     );
   }
-  
 }
