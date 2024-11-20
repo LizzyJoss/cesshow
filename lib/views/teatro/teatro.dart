@@ -23,12 +23,9 @@ class Teatro extends StatelessWidget { //crear la clase login
         foregroundColor: Colors.white,
       ),
       body: Center(
-        child: Text('TEATRO',
-          style: TextStyle(
-            fontSize: 25
-          ),
+        child: Column(
+          
         ),
-        
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Color.fromARGB(255, 105, 31, 145),

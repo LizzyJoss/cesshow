@@ -147,7 +147,9 @@ class Menu extends StatelessWidget { //crear la clase login
                               ],
                             ),
                             ElevatedButton(
-                              onPressed: (){},
+                              onPressed: (){
+                                Navigator.pushNamed(context, '/evento'); 
+                              },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Color.fromARGB(255, 105, 31, 145)
                               ), 
