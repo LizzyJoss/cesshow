@@ -28,7 +28,7 @@ class CreateEventScreen extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Image.network(
-                  'https://via.placeholder.com/400x200', // Reemplaza con tu URL de imagen
+                'https://www.google.com/url?sa=i&url=https%3A%2F%2Fsonosuite.com%2Fes%2Fblog%2Ftendencias-industria-musical-live-streams-gratis-vs-de-pago%2F&psig=AOvVaw2XFwQugOT61nzq561EqCQk&ust=1732195272159000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCn_rCA64kDFQAAAAAdAAAAABAE',
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
